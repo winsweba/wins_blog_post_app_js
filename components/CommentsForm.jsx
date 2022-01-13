@@ -61,7 +61,7 @@ const CommentsForm = ({slug}) => {
                 name='comment'
                 placeholder='Comment'
                 ref={commentEl} 
-                className='p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700' />
+                className='p-4 outline-none w-full rounded-lg focus:ring-2 h-40 focus:ring-gray-200 bg-gray-100 text-gray-700' />
 
                
             </div>
@@ -88,7 +88,8 @@ const CommentsForm = ({slug}) => {
                 </div>
             </div>
             {error && <p className='text-xs text-red-500'>All Fields are required</p> }
-        
+            <div className='mt-8'>
+
             <button 
             type='button'
             onClick={handleCommentSubmission}
@@ -97,6 +98,7 @@ const CommentsForm = ({slug}) => {
                 Post Comment
             </button>
             {showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500  '>Comment submitted for review </span> }
+            </div>
         </div>
     )
 }
