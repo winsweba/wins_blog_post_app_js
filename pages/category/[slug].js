@@ -9,6 +9,7 @@ const CategoryPost = ({ posts }) => {
 
   if (router.isFallback) {
     return <Loader />;
+    
   }
 
   return (
