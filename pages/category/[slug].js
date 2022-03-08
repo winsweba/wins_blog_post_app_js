@@ -7,6 +7,7 @@ import { PostCard, Categories, Loader } from '../../components';
 const CategoryPost = ({ posts }) => {
   const router = useRouter();
 
+  // comment
   if (router.isFallback) {
     return <Loader />;
     
